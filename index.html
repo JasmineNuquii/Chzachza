@@ -1,0 +1,344 @@
+<title>Sugar Dolls</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Gill Sans', serif;
+      background-color: #8c579e;
+      color: #000;
+    }
+    header {
+      background-color: #8c579e;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #000;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background-color: #ecc3fa;
+      padding: 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ecc3fa;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #ecc3fa;
+      color: #000;
+    }
+    h2 {
+      color: #000;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .gallery img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #ecc3fa;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #000;
+    }
+    #home {
+      background-color:#ecc3fa;
+      color: #000;
+      position: relative;
+    }
+    #home::before {
+      display: none;
+    }
+    #home .content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      background- #ecc3fa;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    #home h2 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    #home p {
+      font-size: 1.2em;
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .product-item {
+      width: 250px;
+      text-align: center;
+      background-color: #ecc3fa;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      color: #000;
+    }
+    .product-item:hover {
+      transform: translateY(-5px);
+    }
+    .product-item img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .product-item h3 {
+      font-size: 1.1em;
+      margin: 10px 0 5px;
+    }
+    .product-item p {
+      font-size: 1em;
+      color: #000;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+    blockquote {
+      font-style: italic;
+      margin: 20px auto;
+      max-width: 600px;
+      color: #000;
+    }
+    @media (max-width: 600px) {
+      .product-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product-item {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sugar Dolls</h1>
+  <p>Luxury Scents for Every Occasion</p>
+</header>
+
+<nav>
+  <a href="#home">Home Page</a>
+  <a href="#about">About Us</a>
+  <a href="#products">Products</a>
+  <a href="#services">Services</a>
+  <a href="#mission">Mission</a>
+  <a href="#vision">Vision</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#faqs">FAQs</a>
+  <a href="#contact">Contact Us</a>
+  <a href="#blog">Blog</a>
+  <a href="#locator">Store Locator</a>
+    <a href="#webdesignerprofile">Web Designer Profile</a>
+</nav>
+
+<section id="home">
+  <div class="content">
+    <h2>Welcome to Sugar Dolls</h2>
+    <p>Handcrafted beauty, elegance, and charm. Explore our world of artistry and unique designs.</p>
+    <img src="sugardolls.jfif" alt="Perfume Store" style="border-radius: 10px; margin-top: 20px;">
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Sugar Dolls started as a small creative project and has since blossomed into a renowned business offering high-quality handcrafted dolls. Our passion for art and design is reflected in each piece we create. Founded in [Year], we have served customers around the world, creating bespoke designs for all occasions.</p>
+</section>
+
+<section id="products">
+  <h2>Our Products</h2>
+  <p>Explore our wide range of perfumes, from floral to woody and exotic scents.</p>
+  <div class="product-grid">
+    <!-- Product items -->
+    <div class="product-item">
+      <img src="datenight.jpg" alt="Date Night">
+      <h3>Date Night</h3>
+      <p>189.00</p>
+    </div>
+    <div class="product-item">
+      <img src="honeyrush.jpg" alt="Honey Rush">
+      <h3>Honey Rush</h3>
+      <p>189.00</p>
+    </div>
+    <div class="product-item">
+      <img src="lilac.jpg" alt="Lilac">
+      <h3>Lilac</h3>
+      <p>189.00</p>
+    </div>
+    <div class="product-item">
+      <img src="fruttitropics.jpg" alt="Frutti Tropics">
+      <h3>Frutti Tropics</h3>
+      <p>189.00</p>
+    </div>
+    <div class="product-item">
+      <img src="clean.jpg" alt="Clean">
+      <h3>Clean</h3>
+      <p>189.00</p>
+    </div>
+    <div class="product-item">
+      <img src="beachvibes.jpg" alt="Beach Vibes">
+      <h3>Beach Vibes</h3>
+      <p>189.00</p>
+    </div>
+    <div class="product-item">
+      <img src="creamyvanilla.jpg" alt="Creamy Vanilla">
+      <h3>Creamy Vanilla</h3>
+      <p>189.00</p>
+    </div>
+    <div class="product-item">
+      <img src="powderpuff.jpg" alt="Powder Puff">
+      <h3>Powder Puff</h3>
+      <p>189.00</p>
+    </div>
+    <div class="product-item">
+      <img src="sparklingchampagne.jpg" alt="Sparkling Champagne">
+      <h3>Sparkling Champagne</h3>
+      <p>189.00</p>
+    </div>
+    <div class="product-item">
+      <img src="honeyrush199.jpg" alt="Honey Rush">
+      <h3>Honey Rush 50ml</h3>
+      <p>199</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <ul>
+    <li>Custom Doll Designs</li>
+    <li>Gift Packaging</li>
+    <li>Event Decorations</li>
+     <li>Workshops and Classes</li>
+  </ul>
+   <p>We offer a range of services from personalized creations to large event decorations. Whatever your vision, we bring it to life!</p>
+ 
+</section>
+    
+    <section id="mission">
+  <h2>Our Mission</h2>
+  <ul>
+ <p>Our mission is to create beautiful, unique dolls that inspire joy, creativity, and love for the craft. We aim to bring a touch of elegance and fun to every home, event, and gift.</p>
+  </ul>
+</section>
+    
+      <section id="vission">
+  <h2>Our Vision</h2>
+  <ul>
+     <p>Our vision is to become a global leader in handcrafted dolls, recognized for our attention to detail, quality, and artistic expression. We aim to inspire artists and doll enthusiasts around the world.</p>
+  </ul>
+</section>
+    
+    
+
+<section id="testimonials">
+ <h2>What Our Clients Say</h2>
+        <blockquote>
+            <p>"Sugar Dolls exceeded my expectations! The dolls are so beautiful and unique, I can't wait to order more!"</p>
+            <footer>- Jane Doe, Happy Customer</footer>
+        </blockquote>
+        <blockquote>
+            <p>"The custom decorations for my event were a huge hit! Sugar Dolls made everything look stunning."</p>
+            <footer>- John Smith, Event Organizer</footer>
+        </blockquote>
+    </section>
+
+<section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="perfume.jfif" alt="Custom Doll 1">
+           
+           
+             <p>Take a look at our creations and projects we've worked on!</p>
+        </div>
+<section id="faqs">
+  <h2>Frequently Asked Questions</h2>
+        <div>
+            <h3>How long does it take to create a custom doll?</h3>
+            <p>Custom dolls typically take 2-3 weeks to create, depending on complexity and order volume.</p>
+        </div>
+        <div>
+            <h3>Do you offer international shipping?</h3>
+            <p>Yes, we offer international shipping to most countries. Shipping fees will vary depending on your location.</p>
+        </div>
+    </section>
+
+<section id="contact">
+   <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p>Email: info@sugardolls.com</p>
+        <p>Address: 123 Doll St., Creative City, Artland</p>
+        <p>Phone: (123) 456-7890</p>
+        <div id="map">
+        </div>
+    </section>
+<section id="blog">
+    <h2>News & Blog</h2>
+        <article>
+            <h3>Exciting New Collection Coming Soon!</h3>
+            <p>Stay tuned for our new seasonal collection of dolls that will bring warmth and creativity to your home. We'll be launching in [Month]!</p>
+        </article>
+        <article>
+            <h3>Our Workshop Schedule for 2025</h3>
+            <p>Join us in our upcoming workshops where we teach you the art of creating your own beautiful dolls. Check our schedule for dates and availability!</p>
+        </article>
+    </section>
+
+    <section id="webdesignerprofile">
+  <h2>Web Designer Profile</h2>
+  <p>Jasmine Chzarin N. Nuqui from BSOA 2B</p>
+   <p>Mr. Mark Verzon is a wonderful and inspiring individual. He have a way of making even the most challenging topics engaging and accessible. With his patience, encouragement, and deep knowledge, he foster a learning environment where everyone feels supported and motivated to succeed. I’m truly grateful for all, to help me grow both academically and personally.</p>
+  
+</section>
+
+<footer>
+  <p>&copy; 2025 Sugar Dolls. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
